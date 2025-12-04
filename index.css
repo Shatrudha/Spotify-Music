@@ -627,3 +627,170 @@ header .song-side .popular-artist .item li img{
     height: 100%;
     border-radius: 50%;
 }
+
+
+
+/*=====================*/
+/*       Responsive    */
+/*=====================*/
+
+/* Tablets */
+@media (max-width: 1024px) {
+    header {
+        width: 95%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    header .menu-side {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+    }
+
+    header .song-side {
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+    }
+
+    header .menu-side .menu_song {
+        max-height: 250px;
+    }
+
+    header .song-side .content h1 {
+        font-size: 20px;
+    }
+
+    header .song-side .content p {
+        font-size: 10px;
+    }
+
+    header .song-side .content .buttons button {
+        width: 110px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    header .song-side .popular_songs .pop_song li h5 {
+        font-size: 9px;
+        width: 80px;
+    }
+
+    header .song-side .popular-artist .item li {
+        min-width: 50px;
+        height: 50px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    header .menu-side {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        margin-bottom: 15px;
+    }
+
+    header .song-side {
+        width: 100%;
+        height: auto;
+        padding: 0 10px;
+        box-shadow: none;
+    }
+
+    header .menu-side .playlist h4 {
+        font-size: 12px;
+    }
+
+    header .menu-side .menu_song li {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+
+    header .menu-side .menu_song li img {
+        width: 40px;
+        height: 40px;
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+
+    header .menu-side .menu_song li h5 {
+        font-size: 10px;
+        width: 120px;
+    }
+
+    header .song-side nav {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    header .song-side nav .search {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    header .song-side .content h1 {
+        font-size: 18px;
+    }
+
+    header .song-side .content p {
+        font-size: 9px;
+    }
+
+    header .song-side .content .buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    header .song-side .content .buttons button {
+        width: 100%;
+        font-size: 11px;
+    }
+
+    header .song-side .popular_songs .pop_song,
+    header .song-side .popular-artist .item {
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+    header .song-side .popular_songs .pop_song li,
+    header .song-side .popular-artist .item li {
+        display: inline-block;
+        min-width: 80px;
+        height: 80px;
+        margin-right: 10px;
+    }
+
+    header .master-play {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        height: auto;
+    }
+
+    header .master-play h5 {
+        font-size: 12px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    header .master-play .bar {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    header .master-play .vol {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
